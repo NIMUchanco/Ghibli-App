@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    min-height: 100vh;
+    background: url(images/bg2.jpg) rgba(255, 255, 255, .8);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-attachment: fixed;
+}
+
+body, section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    align-items: start;
+    grid-gap: 1em;
+}
+
+main {
+    padding: 0 .5em 5em .5em;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2, p {
+    justify-self: start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2, h3, a {
+    font-size: 1.5rem;
+}
+
+h3 {
+   color: #787276;
+   margin-top: -1.5em
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+input {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    padding: .1rem .1rem .1rem 1rem;
+    border-radius: 50px 0 0 50px;
+    color: #fff;
+    background-color: #C9A0DC;
+    border: 2px solid #C9A0DC;
+    outline: none;
+    box-shadow: 0px 10px 13px -7px #666, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: .8;
+}
+
+input:active, input:focus {
+    border: 2px solid #C9A0DC;
+}
+
+.x-btn {
+    background-color: #C9A0DC;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+span {
+    display: none;
+}
+
+button {
+    padding: .3em;
+    border-radius: 0 50px 50px 0;
+    background-color: #C9A0DC;
+    border: 2px solid #C9A0DC;
+    border-left: 2px solid rgba(255, 255, 255, .8);
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 10px 13px -7px #666, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#search-icon {
+    width: 25px;
+}
+
+#section2 {
+    padding-top: 2em;
+}
+
+#section2 p {
+    width: 80%;
+}
+
+#btn {
+    padding: .3em 1em;
+    border-radius: 50px;
+    background-color: #C9A0DC;
+    border: 2px solid #C9A0DC;
+    color: #fff;
+    box-shadow: 0px 10px 13px -7px #666, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+
+#btn:hover {
+    font-weight: bold;
+    color: #787276;
+    background: transparent;
+}
+
+.chara-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.chara-h2, .chara-p {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    max-width: 100%;
+    bottom: 1em;
+    background-color: #FFE4C4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: .5em 2em;
+    box-shadow: 0px 10px 13px -7px #666, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+/*** Responsive ***/
+@media screen and (min-width:450px) {
+    h2 {
+        text-align: center;
+    }
+
+    footer {
+        width: 80%;
+    }
+
+    .chara-h2 {
+        font-size: 2rem;
+    }
+
+    .chara-p {
+        font-size: 1.5rem;
+    }
+
+    #section2 p {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:600px) {
+    p {
+        font-size: 1.1rem;
+    }
+
+    #section2 {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    #section2 p {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    button {
+        padding: 0.5em 1em;
+    }
+
+    #search-icon {
+        width: 30px;
+    }
+
+    p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 350px;
+    }
+
+    .chara-img {
+        width: 350px;
+        height: 250px;
+    }
+
+    #section2 p {
+        width: 80%;
+    }
+
+    footer {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    p {
+        width: 60%;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    .chara-img {
+        width:  400px;
+        height: 300px;
+    }
+
+    #section2 p {
+        width: 90%;
+    }
+
+    footer {
+        width: 60%;
+    }
+}
